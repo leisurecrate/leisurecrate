@@ -628,6 +628,11 @@ body.responsive #top-information {
 	display: block;
 }
 
+#masthead hgroup h1 a img {
+	width: 100%;
+	height: auto;
+}
+
 #masthead hgroup h2 {
 	color: #555555;
 	font-size: 12px;
