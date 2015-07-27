@@ -82,8 +82,8 @@ td {
 }
 
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */ 
-	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */ 
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
 }
 
 body {
@@ -109,7 +109,7 @@ ul {
 }
 
 table {
-	border-collapse: separate; /* tables still need 'cellspacing="0"' in the markup */ 
+	border-collapse: separate; /* tables still need 'cellspacing="0"' in the markup */
 	border-spacing: 0;
 }
 
@@ -138,7 +138,7 @@ a:focus {
 
 a:hover,
 a:active {
-	outline: 0; /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */ 
+	outline: 0; /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
 }
 
 a img {
@@ -180,7 +180,7 @@ h6 {
 
 hr {
 	height: 1px;
-	
+
 	background-color: #ccc;
 	border: 0;
 	margin-bottom: 1.5em;
@@ -274,7 +274,7 @@ sup,
 sub {
 	position: relative;
 	height: 0;
-	
+
 	font-size: 75%;
 	line-height: 0;
 	vertical-align: baseline;
@@ -282,12 +282,12 @@ sub {
 
 sup {
 	bottom: 1ex;
-	
+
 }
 
 sub {
 	top: .5ex;
-	
+
 }
 
 small {
@@ -304,7 +304,7 @@ figure {
 
 table {
 	width: 100%;
-	
+
 	margin: 0 0 1.5em 0;
 }
 
@@ -321,15 +321,15 @@ textarea {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	font-size: 100%; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */ 
-	margin: 0; /* Improves appearance and consistency in all browsers */ 
+	font-size: 100%; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	margin: 0; /* Improves appearance and consistency in all browsers */
 	vertical-align: baseline;
 }
 
 button,
 input {
 	*overflow: visible;
-	line-height: normal; /* Corrects inner spacing displayed oddly in IE6/7 */ 
+	line-height: normal; /* Corrects inner spacing displayed oddly in IE6/7 */
 }
 
 button,
@@ -401,11 +401,11 @@ input[type="submit"]:focus {
 
 input[type="checkbox"],
 input[type="radio"] {
-	-ms-box-sizing: border-box; /* Addresses excess padding in IE8/9 */ 
-	-moz-box-sizing: border-box; /* Addresses excess padding in IE8/9 */ 
-	-webkit-box-sizing: border-box; /* Addresses excess padding in IE8/9 */ 
+	-ms-box-sizing: border-box; /* Addresses excess padding in IE8/9 */
+	-moz-box-sizing: border-box; /* Addresses excess padding in IE8/9 */
+	-webkit-box-sizing: border-box; /* Addresses excess padding in IE8/9 */
 	box-sizing: border-box;
-	padding: 0; /* Addresses excess padding in IE8/9 */ 
+	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 
 input[type="search"] {
@@ -420,7 +420,7 @@ input[type="search"]::-webkit-search-decoration {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0; /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */ 
+	border: 0; /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
 	padding: 0;
 }
 
@@ -451,7 +451,7 @@ input[type=password] {
 }
 
 textarea {
-	overflow: auto; /* Improves readability and alignment in all browsers */ 
+	overflow: auto; /* Improves readability and alignment in all browsers */
 	vertical-align: top;
 }
 
@@ -479,8 +479,8 @@ textarea {
 
 .assistive-text {
 	position: absolute !important;
-	
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ 
+
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
@@ -497,7 +497,7 @@ textarea {
 
 #top-information {
 	width: 1150px;
-	
+
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -563,12 +563,12 @@ textarea {
 
 body.responsive #top-information {
 	width: auto;
-	
+
 	max-width: 1150px;
 }
 
 @media only screen and (max-width: 680px) {
-	
+
 	body.responsive #top-information {
 		text-align: center;
 	}
@@ -609,8 +609,10 @@ body.responsive #top-information {
 }
 
 #masthead hgroup {
-	display: inline-block;
-	float: right;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
 }
 
 #masthead hgroup h1 {
@@ -623,6 +625,7 @@ body.responsive #top-information {
 #masthead hgroup h1 a {
 	color: inherit;
 	text-decoration: none;
+	display: block;
 }
 
 #masthead hgroup h2 {
@@ -631,7 +634,7 @@ body.responsive #top-information {
 }
 
 @media only screen and (max-width: 680px) {
-	
+
 	body.responsive #masthead {
 		margin-left: -4.3478260869565215%;
 		margin-right: -4.3478260869565215%;
@@ -653,7 +656,7 @@ body.responsive #top-information {
 
 #page {
 	width: 1150px;
-	
+
 	background: white;
 	border-top: 5px solid #2A8FBD;
 	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -674,15 +677,15 @@ body.responsive #top-information {
 
 body.responsive #page {
 	width: auto;
-	
+
 	max-width: 1150px;
 }
 
 @media only screen and (max-width: 1150px) {
-	
+
 	body.responsive #page {
 		width: auto;
-		
+
 		padding-left: 4.3478260869565215%;
 		padding-right: 4.3478260869565215%;
 	}
@@ -690,10 +693,10 @@ body.responsive #page {
 }
 
 @media only screen and (max-width: 680px) {
-	
+
 	body.responsive #page {
 		width: auto;
-		
+
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -714,15 +717,17 @@ body.responsive #page {
 .main-navigation-float {
 	width: 80px;
 	height: 25px;
-	
+
 	float: left;
 	margin-bottom: -0.5em;
+	display: none;
 }
 
 .main-navigation {
 	clear: left;
 	font-size: 13px;
 	line-height: 1em;
+	display: none;
 }
 
 .main-navigation ul {
@@ -733,7 +738,7 @@ body.responsive #page {
 
 .main-navigation li {
 	position: relative;
-	
+
 	display: inline-block;
 	margin-right: 2.5em;
 }
@@ -756,8 +761,8 @@ body.responsive #page {
 	position: absolute;
 	top: 100%;
 	left: 50%;
-	
-	display: none; /* Second level menu items */ 
+
+	display: none; /* Second level menu items */
 	margin-left: -90px;
 	z-index: 99999;
 }
@@ -768,7 +773,7 @@ body.responsive #page {
 	left: 50%;
 	width: 17px;
 	height: 6px;
-	
+
 	background: url(images/sprites/menu-pointer.png);
 	content: '';
 	display: block;
@@ -782,7 +787,7 @@ body.responsive #page {
 .main-navigation ul ul ul {
 	top: 0;
 	left: 100%;
-	
+
 	margin-left: 0;
 }
 
@@ -792,7 +797,7 @@ body.responsive #page {
 
 .main-navigation ul ul a {
 	width: 180px;
-	
+
 	background: #1c1c1c;
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -820,7 +825,7 @@ body.responsive #page {
 }
 
 @media only screen and (max-width: 680px) {
-	
+
 	body.responsive .main-navigation a {
 		padding: 10px 0;
 	}
@@ -857,7 +862,7 @@ article.sticky {
 
 article.entry {
 	position: relative;
-	
+
 }
 
 article.entry .entry-header {
@@ -897,7 +902,7 @@ article.entry .entry-header .entry-meta.no-title {
 }
 
 @media only screen and (max-width: 680px) {
-	
+
 	article.entry .entry-header h1.entry-title {
 		font-size: 31.5px;
 	}
@@ -916,7 +921,7 @@ article.entry .entry-thumbnail {
 
 article.entry .entry-thumbnail .wp-post-image {
 	height: auto;
-	
+
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
@@ -934,7 +939,7 @@ article.entry .entry-thumbnail .mejs-container {
 article.entry .entry-thumbnail video {
 	width: 100%;
 	height: 100%;
-	
+
 }
 
 article.entry .entry-thumbnail.loading {
@@ -962,7 +967,7 @@ article.entry .decoration {
 	bottom: 0;
 	left: 50%;
 	width: 90px;
-	
+
 	border-bottom: 1px solid #DDD;
 	margin-left: -45px;
 }
@@ -1001,7 +1006,7 @@ article.entry .decoration {
 }
 
 .entry-content {
-	line-height: 1.6em; /* WordPress Images */ 
+	line-height: 1.6em; /* WordPress Images */
 	zoom: 1;
 }
 
@@ -1074,19 +1079,19 @@ article.entry .decoration {
 .entry-content sub {
 	position: relative;
 	height: 0;
-	
+
 	line-height: 1;
 	vertical-align: baseline;
 }
 
 .entry-content sup {
 	bottom: 1ex;
-	
+
 }
 
 .entry-content sub {
 	top: .5ex;
-	
+
 }
 
 .entry-content .gallery {
@@ -1114,12 +1119,12 @@ article.entry .decoration {
 
 .entry-content table {
 	width: 100%;
-	
+
 }
 
 .entry-content img {
 	height: auto;
-	
+
 	max-width: 100%;
 }
 
@@ -1148,11 +1153,11 @@ article.entry .decoration {
 }
 
 .entry-content .alignleft {
-	margin: 0 2em 2em 0; /* This is also styled on a global level */ 
+	margin: 0 2em 2em 0; /* This is also styled on a global level */
 }
 
 .entry-content .alignright {
-	margin: 0 0 2em 2em; /* This is also styled on a global level */ 
+	margin: 0 0 2em 2em; /* This is also styled on a global level */
 }
 
 .entry-content img.wp-smiley {
@@ -1246,7 +1251,7 @@ article.entry .decoration {
 
 .site-content .nav-previous {
 	width: 50%;
-	
+
 	float: left;
 }
 
@@ -1257,7 +1262,7 @@ article.entry .decoration {
 
 .site-content .nav-next {
 	width: 50%;
-	
+
 	float: right;
 	text-align: right;
 }
@@ -1349,16 +1354,16 @@ article.entry .decoration {
 
 #commentform label {
 	width: 25%;
-	
+
 	display: block;
 	float: left;
-	margin-top: 2px; /* Change the comment by the post author */ 
+	margin-top: 2px; /* Change the comment by the post author */
 }
 
 #commentform input,
 #commentform textarea {
 	width: 75%;
-	
+
 	float: left;
 	font-size: 13px;
 	padding: 10px;
@@ -1394,7 +1399,7 @@ article.entry .decoration {
 
 #commentform #submit {
 	width: auto;
-	
+
 	padding: 10px 30px;
 }
 
@@ -1417,12 +1422,12 @@ article.entry .decoration {
 }
 
 @media (max-width: 680px) {
-	
+
 	body.responsive #commentform label,
 	body.responsive #commentform input,
 	body.responsive #commentform textarea {
 		width: 100%;
-		
+
 		-webkit-box-shadow: border-box;
 		-moz-box-shadow: border-box;
 		box-shadow: border-box;
@@ -1441,7 +1446,7 @@ article.entry .decoration {
 
 #colophon {
 	position: relative;
-	
+
 	background: #343538;
 	border-bottom: 1px solid #1e2022;
 	margin: 50px -50px -50px -50px;
@@ -1468,13 +1473,13 @@ article.entry .decoration {
 #colophon .social-links a img {
 	width: 32px;
 	height: 32px;
-	
+
 	display: block;
 }
 
 #colophon .site-info {
 	height: 1em;
-	
+
 	color: #dddddd;
 	float: right;
 	line-height: 1em;
@@ -1543,7 +1548,7 @@ article.entry .decoration {
 }
 
 @media (max-width: 680px) {
-	
+
 	body.responsive #colophon {
 		margin-left: -20px;
 		margin-right: -20px;
@@ -1568,7 +1573,7 @@ article.entry .decoration {
 
 	body.responsive #colophon .site-info {
 		position: static;
-		
+
 		margin: 30px 0 0 0;
 		text-align: center;
 	}
@@ -1581,7 +1586,7 @@ article.entry .decoration {
 
 	body.responsive #colophon #footer-widgets aside.widget {
 		width: 100%;
-		
+
 		float: none;
 		margin-bottom: 30px;
 		padding-left: 0;
@@ -1618,7 +1623,7 @@ article.entry .decoration {
 
 .flexslider {
 	position: relative;
-	
+
 	margin: 0;
 	padding: 0;
 	zoom: 1;
@@ -1643,7 +1648,7 @@ article.entry .decoration {
 .flexslider .slides img {
 	width: 100%;
 	height: auto;
-	
+
 	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
@@ -1655,7 +1660,7 @@ article.entry .decoration {
 	top: 0;
 	left: 0;
 	width: 100%;
-	
+
 	background: rgba(0, 0, 0, 0.5);
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -1682,7 +1687,7 @@ article.entry .decoration {
 	bottom: 15px;
 	left: 0;
 	width: 100%;
-	
+
 	list-style: none;
 	text-align: center;
 }
@@ -1690,7 +1695,7 @@ article.entry .decoration {
 .flexslider .flex-control-nav li {
 	width: 10px;
 	height: 10px;
-	
+
 	display: inline-block;
 	margin: 0;
 	margin-right: 2px;
@@ -1701,7 +1706,7 @@ article.entry .decoration {
 .flexslider .flex-control-nav li a {
 	width: 10px;
 	height: 10px;
-	
+
 	background: url(images/sprites/slide-indicator-inactive.png);
 	cursor: pointer;
 	display: block;
@@ -1725,7 +1730,7 @@ article.entry .decoration {
 	top: 50%;
 	width: 45px;
 	height: 45px;
-	
+
 	display: block;
 	margin-top: -22px;
 	opacity: 0;
@@ -1738,13 +1743,13 @@ article.entry .decoration {
 
 .flexslider .flex-direction-nav li a.flex-prev {
 	left: 0;
-	
+
 	background: url(images/sprites/gallery-prev.png);
 }
 
 .flexslider .flex-direction-nav li a.flex-next {
 	right: 0;
-	
+
 	background: url(images/sprites/gallery-next.png);
 }
 
@@ -1787,7 +1792,7 @@ article.entry .decoration {
 
 .widget img {
 	height: auto;
-	
+
 }
 
 .widget a.button {
@@ -1862,7 +1867,7 @@ article.entry .decoration {
 
 .widget_call-to-action {
 	position: relative;
-	
+
 	background: #444444 url(images/patterns/cta.png);
 	border: 1px solid #000;
 	-webkit-border-radius: 3px;
@@ -1896,20 +1901,20 @@ article.entry .decoration {
 	position: absolute;
 	top: 50%;
 	right: 40px;
-	
+
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.2);
 	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.2);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.2);
-	margin-top: -23px; /* This should be half the height of the button */ 
+	margin-top: -23px; /* This should be half the height of the button */
 }
 
 /* Responsive styles for the call to action widget */
 
 @media (max-width: 680px) {
-	
+
 	body.responsive .widget_call-to-action a.button {
 		position: static;
-		
+
 		display: block;
 		margin-top: 25px;
 		text-align: center;
@@ -1984,11 +1989,12 @@ article.entry .decoration {
 	font-weight: bold;
 	line-height: 1.25em;
 	margin-bottom: 40px;
+	display: none;
 }
 
 .widget_mega_title h2 {
 	position: relative;
-	
+
 	color: #777777;
 	font-family: 'Noto Serif', serif;
 	font-size: 87.5%;
@@ -2003,7 +2009,7 @@ article.entry .decoration {
 	left: 50%;
 	width: 144px;
 	height: 100%;
-	
+
 	border: 1px solid #DDD;
 	border-width: 1px 0;
 	margin-left: -72px;
@@ -2011,7 +2017,7 @@ article.entry .decoration {
 }
 
 @media only screen and (max-width: 680px) {
-	
+
 	body.responsive .widget_mega_title h1 {
 		font-size: 318.75%;
 	}
@@ -2023,7 +2029,7 @@ article.entry .decoration {
 }
 
 @media only screen and (max-width: 480px) {
-	
+
 	body.responsive .widget_mega_title h1 {
 		font-size: 212.5%;
 	}
@@ -2040,7 +2046,7 @@ article.entry .decoration {
 /* We consider 1024px to be small desktop */
 
 @media (max-width: 1024px) {
-	
+
 	body.responsive.single article.post .entry-thumbnail {
 		margin-left: -50px;
 		margin-right: -50px;
@@ -2051,6 +2057,5 @@ article.entry .decoration {
 /* We consider 680px to be mobile resolution */
 
 @media (max-width: 680px) {
-	
-}
 
+}
