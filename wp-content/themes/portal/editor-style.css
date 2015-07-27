@@ -1,0 +1,219 @@
+@import "http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Noto+Serif:400,400italic|Alex+Brush";
+body#tinymce.wp-editor {
+	color: #666;
+	font-family: 'Noto Sans', sans-serif;
+	line-height: 1.6em;
+	max-width: 680px;
+	zoom: 1;
+}
+
+body#tinymce.wp-editor:before {
+	content: '';
+	display: block;
+}
+
+body#tinymce.wp-editor:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+body#tinymce.wp-editor p,
+body#tinymce.wp-editor > ul,
+body#tinymce.wp-editor > li,
+body#tinymce.wp-editor > dl {
+	margin: 2em 0;
+}
+
+body#tinymce.wp-editor > *:last-child {
+	margin-bottom: 0;
+}
+
+body#tinymce.wp-editor > *:first-child {
+	margin-top: 0;
+}
+
+body#tinymce.wp-editor blockquote {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	margin-left: 1.5em;
+}
+
+body#tinymce.wp-editor blockquote cite {
+	font-family: "Droid Sans", sans-serif;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor pre {
+	background: white;
+	border: 1px solid #E0E0E0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+	font-family: "Courier New", Courier, mono;
+	overflow-x: auto;
+	padding: 10px;
+}
+
+body#tinymce.wp-editor code {
+	font-family: "Courier New", Courier, mono;
+}
+
+body#tinymce.wp-editor sup,
+body#tinymce.wp-editor sub {
+	position: relative;
+	height: 0;
+	
+	line-height: 1;
+	vertical-align: baseline;
+}
+
+body#tinymce.wp-editor sup {
+	bottom: 1ex;
+	
+}
+
+body#tinymce.wp-editor sub {
+	top: .5ex;
+	
+}
+
+body#tinymce.wp-editor .gallery {
+	margin: 25px 0 !important;
+}
+
+body#tinymce.wp-editor .gallery .gallery-item {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+body#tinymce.wp-editor .gallery .gallery-icon {
+	line-height: 0;
+	margin-bottom: 0 !important;
+}
+
+body#tinymce.wp-editor .gallery img {
+	border: none !important;
+}
+
+body#tinymce.wp-editor .gallery .gallery-caption {
+	margin: 10px !important;
+	padding-left: 0 !important;
+}
+
+body#tinymce.wp-editor table {
+	width: 100%;
+	
+}
+
+body#tinymce.wp-editor img {
+	height: auto;
+	
+	max-width: 100%;
+}
+
+body#tinymce.wp-editor .wp-caption {
+	border: 1px solid #E0E0E0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 5px 0 30px 0;
+	max-width: 100%;
+	padding: 8px;
+	text-align: center;
+}
+
+body#tinymce.wp-editor .wp-caption:first-child {
+	margin-top: 25px;
+}
+
+body#tinymce.wp-editor .wp-caption p.wp-caption-text {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0;
+}
+
+body#tinymce.wp-editor .alignleft {
+	margin: 0 1.5em 1.5em 0; /* This is also styled on a global level */ 
+}
+
+body#tinymce.wp-editor .alignright {
+	margin: 0 0 1.5em 1.5em; /* This is also styled on a global level */ 
+}
+
+body#tinymce.wp-editor img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+body#tinymce.wp-editor ul {
+	list-style-type: square;
+}
+
+body#tinymce.wp-editor ol {
+	list-style-type: decimal;
+}
+
+body#tinymce.wp-editor ol ol {
+	list-style-type: upper-alpha;
+}
+
+body#tinymce.wp-editor ol ol ol {
+	list-style-type: lower-roman;
+}
+
+body#tinymce.wp-editor ul li,
+body#tinymce.wp-editor ol li {
+	margin-left: 1.5em;
+}
+
+body#tinymce.wp-editor dl dt {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+body#tinymce.wp-editor dl dd {
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor h6 {
+	margin: 1em 0;
+}
+
+body#tinymce.wp-editor h1 {
+	font-size: 1.8em;
+}
+
+body#tinymce.wp-editor h2 {
+	font-size: 1.65em;
+}
+
+body#tinymce.wp-editor h3 {
+	font-size: 1.5em;
+}
+
+body#tinymce.wp-editor h4 {
+	font-size: 1.35em;
+}
+
+body#tinymce.wp-editor h5 {
+	font-size: 1.2em;
+}
+
+body#tinymce.wp-editor h6 {
+	font-size: 0.9em;
+}
+
+body#tinymce.wp-editor embed,
+body#tinymce.wp-editor iframe,
+body#tinymce.wp-editor object {
+	max-width: 100%;
+}
+
