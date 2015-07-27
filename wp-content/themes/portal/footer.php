@@ -43,8 +43,8 @@
 			?>
 		</div>
 
-		<div class="site-info" <?php siteorigin_setting_editable('text_footer_copyright') ?>>
-			<?php do_action( 'portal_credits' ); ?>
+		<div class="site-info">
+			<p><strong>CONTACT US</strong>: (+63)2-788-8448 / (+63)917-774-0186 <strong>&nbsp; | &nbsp;</strong><a href="mailto:travel@leisurecrate.com">travel@leisurecrate.com</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
