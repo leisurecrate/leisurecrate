@@ -104,10 +104,10 @@ function portal_comment( $comment, $args, $depth ) {
 							<em class="awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'portal' ); ?></em>
 						<?php endif; ?>
 					</footer>
-		
+
 					<div class="comment-content entry-content"><?php comment_text(); ?></div>
 				</article><!-- #comment-## -->
-		
+
 			<?php
 			break;
 	endswitch;
@@ -135,7 +135,7 @@ endif;
 
 if(!function_exists('portal_display_logo')):
 /**
- * Display the logo 
+ * Display the logo
  */
 function portal_display_logo(){
 	$logo = siteorigin_setting('general_logo');
@@ -145,7 +145,7 @@ function portal_display_logo(){
 		bloginfo( 'name' );
 		return;
 	}
-	
+
 	// load the logo image
 	$image = wp_get_attachment_image_src($logo, 'full');
 	$height = $image[2];
@@ -167,11 +167,11 @@ function portal_categorized_blog() {
 		$count = count( get_categories( array(
 			'hide_empty' => 1,
 		) ) );
-		
+
 		// Count the number of categories that are attached to the posts
 		set_transient( 'portal_categorized_blog_cache_count', $count );
 	}
-	
+
 	// Return true if this blog has categories, or else false.
 	return ($count >= 1);
 }
@@ -189,7 +189,7 @@ add_action( 'save_post', 'portal_category_transient_flusher' );
 
 /**
  * Return the archive title depending on which page is being displayed.
- * 
+ *
  * @since portal 1.0
  */
 function portal_get_archive_title(){
@@ -223,13 +223,13 @@ function portal_get_archive_title(){
 	else {
 		$title = __( 'Posts', 'portal' );
 	}
-	
+
 	return apply_filters('portal_archive_title', $title);
 }
 
 /**
  * Get the post meta.
- * 
+ *
  * @since portal 1.0
  */
 function portal_get_post_meta(){
@@ -262,13 +262,13 @@ function portal_get_post_meta(){
 		get_permalink(),
 		the_title_attribute( 'echo=0' )
 	);
-	
+
 	return apply_filters('portal_post_meta', $meta);
 }
 
 /**
  * Gets the URL that should be displayed when clicking on an image in the view image page.
- * 
+ *
  * @param null $post
  * @return string
  */
@@ -276,7 +276,7 @@ function portal_next_attachment_url($post = null){
 	if(empty($post)){
 		global $post;
 	}
-	
+
 	/**
 	 * Grab the IDs of all the image attachments in a gallery so we can get the URL of the next adjacent image in a gallery,
 	 * or the first image (if we're looking at the last image in a gallery), or, in a gallery of one, just the link to that image file
@@ -304,13 +304,13 @@ function portal_next_attachment_url($post = null){
 			// or get the URL of the first image attachment
 			$next_attachment_url = get_attachment_link( $attachments[ 0 ]->ID );
 		}
-			
+
 	}
 	else {
 		// or, if there's only 1 image, get the URL of the image
 		$next_attachment_url = wp_get_attachment_url();
 	}
-	
+
 	return $next_attachment_url;
 }
 
@@ -334,7 +334,7 @@ function portal_entry_thumbnail(){
 		default :
 			if(has_post_thumbnail()) {
 				if(!is_single()) echo '<a href="'.get_permalink().'" title="'.esc_attr(get_the_title()).'">';
-				the_post_thumbnail();
+				the_post_thumbnail('full');
 				if(!is_single()) echo '</a>';
 			}
 			break;
