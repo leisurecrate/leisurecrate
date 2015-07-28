@@ -1494,13 +1494,12 @@ article.entry .decoration {
 }
 
 #colophon .site-info {
-	height: 1em;
-
 	color: #dddddd;
 	float: right;
 	line-height: 1em;
 	margin-bottom: -0.5em;
 	padding-top: 9px;
+	line-height: 1.5;
 }
 
 #colophon .site-info a {
@@ -2096,6 +2095,10 @@ article.entry .decoration {
 /* We consider 680px to be mobile resolution */
 
 @media (max-width: 680px) {
+	body.responsive #colophon .site-info {
+		text-align: left;
+	}
+
 	.loop-default {
 		float: none;
 		display: block;
@@ -2114,4 +2117,6 @@ article.entry .decoration {
 		font-weight: bold;
 		margin-bottom: 20px;
 	}
+
+	#page { margin-bottom: 0; }
 }
