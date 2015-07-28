@@ -988,12 +988,6 @@ article.entry .decoration {
 	margin-left: -45px;
 }
 
-.loop-default {
-	float: left;
-	display: block;
-	width: 70%;
-}
-
 .archive article.post,
 .loop-default article.post {
 	margin-bottom: 60px;
@@ -2061,6 +2055,29 @@ article.entry .decoration {
 	}
 
 }
+.site-content {
+	position: relative;
+	backface-visibility: hidden;
+}
+
+.loop-default {
+	float: left;
+	display: block;
+	width: 70%;
+}
+
+.lc-sidebar {
+	width: 26.5%;
+	float: right;
+	backface-visibility: hidden;
+
+}
+
+.lc-sidebar h2.rounded {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
 
 /* =Responsive Layout
 ----------------------------------------------- */
@@ -2079,16 +2096,22 @@ article.entry .decoration {
 /* We consider 680px to be mobile resolution */
 
 @media (max-width: 680px) {
+	.loop-default {
+		float: none;
+		display: block;
+		width: 100%;
+		clear: both;
+	}
 
-}
+	.lc-sidebar {
+		width: 100%;
+		float: none;
+		transform: none !important;
+	}
 
-.lc-sidebar {
-	width: 26.5%;
-	float: right;
-}
-
-.lc-sidebar h2.rounded {
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 20px;
+	.lc-sidebar h2.rounded {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
 }

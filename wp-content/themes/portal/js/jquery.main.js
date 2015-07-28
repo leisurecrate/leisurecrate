@@ -4,7 +4,7 @@
 jQuery(function($){
     // Initialize the flex slider
     $('.flexslider').flexslider({});
-    
+
     /* Setup fitvids for entry content and panels */
     $('.entry-content, .entry-content .panel, .entry-thumbnail' ).fitVids();
 
@@ -40,6 +40,17 @@ jQuery(function($){
             });
         });
     }
+
+    var sideOffset = $(document).find('.lc-sidebar').offset().top;
+    var contOffset = $(document).find('.site-content').offset().top;
+
+    $(document).on("scroll", function(e){
+        if( $(window).scrollTop() >= (sideOffset - 30) ){
+            $(document).find('.lc-sidebar').css({ "transform"  : "translate3d(0,"+( $(window).scrollTop()-sideOffset+30 )+"px,0)" });
+        } else {
+            $(document).find('.lc-sidebar').removeClass("fixed");
+        }
+    });
 });
 
 // Preload the loader image
