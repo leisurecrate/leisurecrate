@@ -44,7 +44,7 @@ if ( ! function_exists( 'portal_setup' ) ) :
 function portal_setup() {
 	// Initialize SiteOrigin settings
 	siteorigin_settings_init();
-	
+
 	// Make the theme translatable
 	load_theme_textdomain( 'portal', get_template_directory() . '/languages' );
 
@@ -119,7 +119,7 @@ add_action('widgets_init', 'portal_sidebars_init');
 
 /**
  * Setup the WordPress core custom background feature.
- * 
+ *
  * @since portal 1.0
  */
 function portal_register_custom_background() {
@@ -166,7 +166,7 @@ add_action( 'wp_enqueue_scripts', 'portal_scripts' );
 
 /**
  * Add custom body classes.
- * 
+ *
  * @param $classes
  * @package portal
  * @since 1.0
@@ -200,3 +200,22 @@ function portal_post_class($classes){
 	return $classes;
 }
 add_filter('post_class', 'portal_post_class');
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function lc_sidebar_init() {
+
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'lc_sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'lc_sidebar_init' );
+?>

@@ -15,8 +15,8 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-	<div id="content" class="site-content" role="main">
+<div id="primary" class="content-area clearfix">
+	<div id="content" class="site-content clearfix" role="main">
 
 		<?php if( is_home() && $GLOBALS['wp_query']->get('paged') == 0 && siteorigin_setting('home_title_display') ) : ?>
 			<div id="home-title">
@@ -54,6 +54,10 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php get_template_part('loop', siteorigin_setting('home_loop')) ?>
+
+			<aside class="lc-sidebar">
+				<?php dynamic_sidebar( 'lc_sidebar' ) ?>
+			</aside>
 
 		<?php else : ?>
 

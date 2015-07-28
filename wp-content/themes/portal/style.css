@@ -161,6 +161,17 @@ textarea {
 	line-height: 1.5em;
 }
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 /* Links */
 
 a {
@@ -975,6 +986,12 @@ article.entry .decoration {
 
 	border-bottom: 1px solid #DDD;
 	margin-left: -45px;
+}
+
+.loop-default {
+	float: left;
+	display: block;
+	width: 70%;
 }
 
 .archive article.post,
@@ -2063,4 +2080,15 @@ article.entry .decoration {
 
 @media (max-width: 680px) {
 
+}
+
+.lc-sidebar {
+	width: 26.5%;
+	float: right;
+}
+
+.lc-sidebar h2.rounded {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
