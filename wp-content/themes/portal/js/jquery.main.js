@@ -41,16 +41,16 @@ jQuery(function($){
         });
     }
 
-    var sideOffset = $(document).find('.lc-sidebar').offset().top;
-    var contOffset = $(document).find('.site-content').offset().top;
-
-    $(document).on("scroll", function(e){
-        if( $(window).scrollTop() >= (sideOffset - 30) ){
-            $(document).find('.lc-sidebar').css({ "transform"  : "translate(0,"+( $(window).scrollTop()-sideOffset+30 )+"px)" });
-        } else {
-            $(document).find('.lc-sidebar').css({ "transform" : "none" });
-        }
-    });
+    // var sideOffset = $(document).find('.lc-sidebar').offset().top;
+    // var contOffset = $(document).find('.site-content').offset().top;
+    //
+    // $(document).on("scroll", function(e){
+    //     if( $(window).scrollTop() >= (sideOffset - 30) ){
+    //         $(document).find('.lc-sidebar').css({ "transform"  : "translate(0,"+( $(window).scrollTop()-sideOffset+30 )+"px)" });
+    //     } else {
+    //         $(document).find('.lc-sidebar').css({ "transform" : "none" });
+    //     }
+    // });
 });
 
 // Preload the loader image
