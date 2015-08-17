@@ -642,11 +642,6 @@ body.responsive #top-information {
 #masthead hgroup h1 a img {
 	width: 100%;
 	height: auto;
-	-webkit-transform: scale(0.75);
-	-moz-transform: scale(0.75);
-	-ms-transform: scale(0.75);
-	-o-transform: scale(0.75);
-	transform: scale(0.75);
 }
 
 #masthead hgroup h2 {
@@ -655,6 +650,14 @@ body.responsive #top-information {
 }
 
 @media only screen and (max-width: 680px) {
+
+	#masthead hgroup h1 a img {
+		-webkit-transform: scale(0.75);
+		-moz-transform: scale(0.75);
+		-ms-transform: scale(0.75);
+		-o-transform: scale(0.75);
+		transform: scale(0.75);
+	}
 
 	body.responsive #masthead {
 		margin-left: -4.3478260869565215%;
