@@ -642,6 +642,11 @@ body.responsive #top-information {
 #masthead hgroup h1 a img {
 	width: 100%;
 	height: auto;
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	-ms-transform: scale(0.75);
+	-o-transform: scale(0.75);
+	transform: scale(0.75);
 }
 
 #masthead hgroup h2 {
