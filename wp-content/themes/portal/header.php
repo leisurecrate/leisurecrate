@@ -57,4 +57,4 @@
 
 	</header><!-- #masthead .site-header -->
 
-	<div id="main" class="site-main">
+	<div id="main" class="site-main clearfix">
